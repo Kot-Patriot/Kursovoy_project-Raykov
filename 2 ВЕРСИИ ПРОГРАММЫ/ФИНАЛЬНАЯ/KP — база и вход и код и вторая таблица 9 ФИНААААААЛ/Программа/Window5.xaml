@@ -1,0 +1,40 @@
+﻿<Window x:Class="Приложушечка.Window5"
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Приложушечка"
+        mc:Ignorable="d"
+        Title="Расписание" Height="720" Width="1280">
+    <Grid Background="#FFE6E2E2">
+        <Image Margin="10,10,1080,625" Source="/poli.png" Stretch="Fill" RenderTransformOrigin="0.496,0.09"/>
+        <Button x:Name="glavnaya" Content="Главная" HorizontalAlignment="Left" Margin="252,83,0,0" VerticalAlignment="Top" Width="153" Height="42" Click="glavnaya_Click" Background="White"/>
+        <Button x:Name="sotrudniki" Content="Сотрудники" HorizontalAlignment="Left" Margin="442,83,0,0" VerticalAlignment="Top" Width="153" Height="42" Click="sotrudniki_Click" Background="White"/>
+        <Button x:Name="prikazy" Content="Новости" HorizontalAlignment="Left" Margin="631,83,0,0" VerticalAlignment="Top" Width="153" Height="42" Click="prikazy_Click" Background="White"/>
+        <Button x:Name="otchety" Content="Отчёты" HorizontalAlignment="Left" Margin="1271,10,0,0" VerticalAlignment="Top" Width="3" Height="1" Click="otchety_Click" Background="White"/>
+        <Button x:Name="raspisanye" Content="Расписание" HorizontalAlignment="Left" Margin="816,83,0,0" VerticalAlignment="Top" Width="153" Height="42" Click="raspisanye_Click" Background="White"/>
+        <Button x:Name="settings" Content="Настройки" HorizontalAlignment="Left" Margin="1005,83,0,0" VerticalAlignment="Top" Width="153" Height="42" Click="settings_Click" Background="White"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,-1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"><Run Language="ru-ru" Text="АИС ПОЛИКЛИНИКА"/></TextBlock>
+        <Button Content="" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" Width="1280" Height="1" BorderBrush="Black" Background="Black" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="1167,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="99" FontSize="18"><Run Language="ru-ru" Text="Расписание"/></TextBlock>
+        <Image Margin="10,140,461,10" Source="/Image6.png" Stretch="Fill"/>
+        <Image Margin="824,291,10,161" Source="/Image7.png" Stretch="Fill"/>
+        <Button Content="Обновить таблицы" HorizontalAlignment="Left" Margin="824,207,0,0" VerticalAlignment="Top" Height="46" Width="187" RenderTransformOrigin="0.499,0.291" Click="Button_Click"/>
+        <Button Content="Внести изменения в расписание" HorizontalAlignment="Left" Margin="1060,207,0,0" VerticalAlignment="Top" Height="46" Width="187" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="868,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"><Run Language="ru-ru" Text="Внесение изменений"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="872,563,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Text="Добавление врачей"/>
+        <Button Content="Добавить врача в таблицу" HorizontalAlignment="Left" Margin="950,633,0,0" VerticalAlignment="Top" Height="46" Width="186" RenderTransformOrigin="0.499,0.291" Click="Button_Click"/>
+
+    </Grid>
+</Window>
